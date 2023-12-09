@@ -7,9 +7,9 @@ public class Test {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-				"com/satyam/spring/springcore_advanced/autowiring/annotations/config.xml");
+				"com/satyam/spring/springcore_advanced/autowiring/hotelmanagement/config.xml");
 
-		Employee employee = (Employee) context.getBean("employee");
-		System.out.println(employee);
+		Customer customer = (Customer) context.getBean("customer");
+		System.out.println(customer);
 	}
 }

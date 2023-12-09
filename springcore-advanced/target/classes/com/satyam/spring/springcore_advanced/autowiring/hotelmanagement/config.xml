@@ -12,16 +12,16 @@
 	<context:annotation-config />
 
 	<bean
-		class="com.satyam.spring.springcore_advanced.autowiring.annotations.Address"
-		name="address123" p:hno="123" p:street="mira mesa" p:city="san diego" />
+		class="com.satyam.spring.springcore_advanced.autowiring.hotelmanagement.Reservation"
+		name="reservation" p:id="123" p:time="30/12/1995" />
 
 	<bean
-		class="com.satyam.spring.springcore_advanced.autowiring.annotations.Address"
-		name="address2" p:hno="567" p:street="mira mesa" p:city="san diego" />
+		class="com.satyam.spring.springcore_advanced.autowiring.hotelmanagement.Reservation"
+		name="reservation2" p:id="567" p:time="30/12/1995" />
 
 
 	<bean
-		class="com.satyam.spring.springcore_advanced.autowiring.annotations.Employee"
-		name="employee" />
+		class="com.satyam.spring.springcore_advanced.autowiring.hotelmanagement.Customer"
+		name="customer" />
 
 </beans>	

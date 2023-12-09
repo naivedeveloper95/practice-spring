@@ -3,19 +3,19 @@ package com.satyam.spring.springcore_advanced.autowiring.hotelmanagement;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-public class Employee {
+public class Customer {
 
 	@Autowired(required = false)
-	@Qualifier("address123")
-	private Address address;
+	@Qualifier("reservation2")
+	private Reservation reservation;
 
 //	@Autowired
 //	public Employee(Address address) {
 //		this.address = address;
 //	}
 
-	public Address getAddress() {
-		return address;
+	public Reservation getReservation() {
+		return reservation;
 	}
 
 //	@Autowired
@@ -25,7 +25,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [address=" + address + "]";
+		return "Customer [reservation=" + reservation + "]";
 	}
 
 }
