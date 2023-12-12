@@ -44,9 +44,8 @@ public class Test {
 //		System.out.println(passenger);
 //		System.out.println(createdPassenger);
 		List<Passenger> passengerList = pdao.getAllPassenger();
-		for (Iterator iterator = passengerList.iterator(); iterator.hasNext();) {
-			Passenger passenger = (Passenger) iterator.next();
-			System.out.println(passenger);
+		for (Iterator<Passenger> iterator = passengerList.iterator(); iterator.hasNext();) {
+			System.out.println(iterator.next());
 		}
 	}
 
